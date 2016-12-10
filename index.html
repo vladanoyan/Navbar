@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title>Search Navbar Template | PrepBootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/nonresponsiv.css" />
+
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <script>
+    /*responsiv js*/
+//http://jsfiddle.net/wUAGP/434/  
+ $(document).ready(function(){
+
+$('.navbar-default').prepend('<div class="arrow-up"></div> ');
+
+var foundActive = false, activeElement, indicatorPosition, indicator = $('.navbar-default .arrow-up'), defaultPosition;
+
+$("#pop > li").each(function() {
+  if ($(this).hasClass('active')) {
+    activeElement = $(this);
+    foundActive = true;
+  }
+});
+
+if (foundActive === false) {
+  activeElement = $("#pop > li").first();
+}
+
+defaultPosition = indicatorPosition = activeElement.position().left + activeElement.width()/2 - 5;
+indicator.css("left", indicatorPosition);
+
+$("#pop > li").hover(function() {
+  activeElement = $(this);
+  indicatorPosition = activeElement.position().left + activeElement.width()/2 - 5;
+  indicator.css("left", indicatorPosition);
+}, function() {
+  indicator.css("left", defaultPosition);
+});
+
+
+
+
+
+});
+
+</script>
+</head>
+<body>
+
+<div class="container">
+
+<!-- Search Navbar - START -->
+<nav class="navbar navbar-default" role="navigation">
+<!-- <div class="arrow-up"></div>  -->
+    <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Company Name</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav" id="pop">
+             <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>                    
+                </ul>
+            </li>
+        </ul>
+        <div class="col-sm-3 col-md-3 pull-right">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>        
+    </div>
+
+</nav>
+
+</div>
+<!-- Search Navbar - END -->
+
+
+<!-- SECOND NAVBAR -->
+<div id="menu2017" >
+
+    <ul id="nav" class="use-trans"><div class="arrow-up3"></div>
+<li>
+    <a class="fadeInRightBig" href="#">Voluptate Atque<div id="bord"></div></a>
+
+        <div class="submenu">
+            <ul>
+                <li><a href="#">Quo voluptas nulla pariatur?<span></span></a></li>
+                <li><a href="#">Dignissimos Ducimus<span></span></a></li>
+                <li><a href="#">Qui blanditiis<span></span></a></li>
+            </ul>
+        
+            <div class="padding"></div>
+            <div class="shadow"></div>
+        </div>
+    </li>
+
+
+    <li>
+        <a href="#">Corrupti Quos Dolores<div id="bord"></div></a>
+  
+        <div class="submenu">
+            <ul>
+                <li><a href="#">Qui Dolorem<span></span></a></li>
+                <li><a href="#">Ipsum Quia<span></span></a></li>
+                <li><a href="#">Dolor Sit<span></span></a></li>
+                <li><a href="#">Tempore<span></span></a></li>
+                <li><a href="#">Qui Ratione<span></span></a></li>
+                <li>
+                    <a href="#">Amet, nam libero! &nbsp;&nbsp;&nbsp;&raquo;<span></span></a>
+
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="#">Qui Dolorem<span></span></a></li>
+                            <li><a href="#">Ipsum Quia<span></span></a></li>
+                            <li><a href="#">Dolor Sit<span></span></a></li>
+                            <li><a href="#">Qui Dolorem<span></span></a></li>
+                            <li><a href="#">Ipsum Quia<span></span></a></li>
+                            <li><a href="#">Dolor Sit<span></span></a></li>
+                            <li><a href="#">Qui Dolorem<span></span></a></li>
+                            <li><a href="#">Ipsum Quia<span></span></a></li>
+                            <li><a href="#">Dolor Sit<span></span></a></li>
+                            <li>
+                                <a href="#">Amet, nam libero! Libero, libero, LIBERO!! &nbsp;&nbsp;&nbsp;&raquo;<span></span></a>
+                            
+                                <div class="submenu">
+                                        <ul>
+                                            <li><a href="#">Dude, what the fuck is "Libero"?<span></span></a></li>
+                                            <li><a href="#">Ipsum Quia<span></span></a></li>
+                                            <li><a href="#">Dolor Sit<span></span></a></li>
+                                            <li><a href="#">Qui Dolorem<span></span></a></li>
+                                            <li><a href="#">Ipsum Quia<span></span></a></li>
+                                            <li><a href="#">Dolor Sit<span></span></a></li>
+                                        </ul>
+
+                                        <div class="padding"></div>
+                                        <div class="shadow"></div>
+                                        <div class="buffer"></div>
+                                </div>
+
+                            </li>
+                            <li><a href="#">Tempore<span></span></a></li>
+                            <li><a href="#">Qui Ratione<span></span></a></li>
+                        </ul>
+                    
+                        <div class="padding"></div>
+                        <div class="shadow"></div>
+                        <div class="buffer"></div>
+                    </div>
+
+                </li>
+            </ul>
+
+            <div class="padding"></div>
+            <div class="shadow"></div>
+        </div>
+    </li>
+
+
+    <li>
+        <a href="#">Et Quas Molestias<span></span><div id="bord"></div></a>
+      
+        <div class="submenu">
+            <ul>
+                <li><a href="#">Voluptatem sequi nesciunt<span></span></a></li>
+                <li><a href="#">Dicta sunt explicabo.<span></span></a></li>
+                <li><a href="#">Sed Quia Non<span></span></a></li>
+                <li><a href="#">Numquam Eius<span></span></a></li>
+                <li><a href="#">Modi cum soluta<span></span></a></li>
+                <li><a href="#">Nobis est<span></span></a></li>
+            </ul>
+        
+            <div class="padding"></div>
+            <div class="shadow"></div>
+        </div>
+    </li>
+
+
+    <li>
+        <a href="#">Iste natus error sit voluptatem.<div id="bord"></div></a>
+       
+        <div class="submenu">
+            <ul>
+                <li><a href="#">Eligendi Optio<span></span></a></li>
+                <li><a href="#">Atque Corrupti<span></span></a></li>
+                <li><a href="#">Quos Dolores<span></span></a></li>
+                <li><a href="#">Quas Molestias.<span></span></a></li>
+                <li><a href="#">Libero Tempore<span></span></a></li>
+                <li><a href="#">Dignissimos Ducimus<span></span></a></li>
+            </ul>
+        
+            <div class="padding"></div>
+            <div class="shadow"></div>
+        </div>
+    </li>
+    <a  class="navbar-brands" href="#" ><i>WebSiteName</i></a>
+    <div class="arrow-up2">
+</ul>
+
+<!-- <script type="text/javascript" src="bootstrap/js/nonresponsiv.js"></script>
+  -->   
+
+
+</div>   <!-- menu 2017 -->
+
+
+
+
+
+</body>
+</html>
